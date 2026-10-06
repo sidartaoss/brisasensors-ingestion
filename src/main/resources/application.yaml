@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: brisasensors-ingestion
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: password
+    virtual-host: brisasensors
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      mandatory: true
